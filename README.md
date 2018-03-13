@@ -9,7 +9,7 @@ Please be gentle with Kotlin :)
   <img alt="Android app on Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" />
 </a>
 
-[![gif](https://raw.githubusercontent.com/florent37/ExpectAnim/master/media/sample.gif)](https://github.com/florent37/ExpectAnim)
+[![gif](https://raw.githubusercontent.com/florent37/KotlinPleaseAnimate/master/media/sample.gif)](https://github.com/florent37/KotlinPleaseAnimate)
 
 ```kotlin
 please {
@@ -72,7 +72,7 @@ please(duration = 1500L) {
 
 ## Follow scroll
 
-[![gif](https://raw.githubusercontent.com/florent37/ExpectAnim/master/media/scroll.gif)](https://github.com/florent37/ExpectAnim)
+[![gif](https://raw.githubusercontent.com/florent37/KotlinPleaseAnimate/master/media/scroll.gif)](https://github.com/florent37/KotlinPleaseAnimate)
 
 Use `setPercent` to apply modify the current step of the animation
 
