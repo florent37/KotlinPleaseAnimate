@@ -202,13 +202,6 @@ please {
 }
 ````
 
-# Proguard
-
-```
--keep class com.github.florent37.kotlin.pleaseanimate.*{ *; }
--dontwarn com.github.florent37.kotlin.pleaseanimate.**
-```
-
 # Credits
 
 Author: Florent Champigny [http://www.florentchampigny.com/](http://www.florentchampigny.com/)
