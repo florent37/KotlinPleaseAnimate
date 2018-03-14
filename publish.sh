@@ -1,2 +1,3 @@
-./gradlew :kotlinpleaseanimate:assembleDebug :kotlinpleaseanimate:install
+./gradlew :kotlinpleaseanimate:assembleDebug
+./gradlew :kotlinpleaseanimate:install
 ./gradlew :kotlinpleaseanimate:bintrayUpload
