@@ -1,5 +1,10 @@
 # Kotlin Please Animate
 
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-KotlinPleaseAnimate-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/6837)
+[![CircleCI](https://circleci.com/gh/florent37/KotlinPleaseAnimate/tree/master.svg?style=svg)](https://circleci.com/gh/florent37/NoActivityResult/tree/master)
+[![Language](https://img.shields.io/badge/language-kotlin-brightgreen.svg)](https://www.github.com/florent37/KotlinPleaseAnimate)
+
+
 `Kotlin, please, can you animate my views ?`
 
 A Kotlin way to declare and run beautiful animations ! 
