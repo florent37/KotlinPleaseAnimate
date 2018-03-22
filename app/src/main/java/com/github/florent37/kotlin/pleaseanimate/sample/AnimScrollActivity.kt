@@ -20,8 +20,8 @@ class AnimScrollActivity : AppCompatActivity() {
 
         val animation = please {
             animate(avatar) toBe {
-                topOfHisParent(marginDp = 20f)
-                leftOfHisParent(marginDp = 20f)
+                topOfItsParent(marginDp = 20f)
+                leftOfItsParent(marginDp = 20f)
                 scale(0.5f, 0.5f)
             }
 
@@ -33,7 +33,7 @@ class AnimScrollActivity : AppCompatActivity() {
             }
 
             animate(revert) toBe {
-                rightOfHisParent(marginDp = 20f)
+                rightOfItsParent(marginDp = 20f)
                 sameCenterVerticalAs(avatar)
             }
 

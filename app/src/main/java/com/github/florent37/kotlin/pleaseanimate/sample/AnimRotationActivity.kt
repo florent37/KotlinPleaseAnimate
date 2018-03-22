@@ -13,8 +13,8 @@ class AnimRotationActivity : AppCompatActivity() {
 
         val animation = please(duration = 1500L) {
             animate(text1) toBe {
-                topOfHisParent()
-                leftOfHisParent()
+                topOfItsParent()
+                leftOfItsParent()
                 toBeRotated(90f)
             }
             animate(text2) toBe {
@@ -31,8 +31,8 @@ class AnimRotationActivity : AppCompatActivity() {
             }
         }.thenCouldYou {
             animate(text1) toBe {
-                topOfHisParent()
-                leftOfHisParent()
+                topOfItsParent()
+                leftOfItsParent()
                 toBeRotated(90f)
             }
         }

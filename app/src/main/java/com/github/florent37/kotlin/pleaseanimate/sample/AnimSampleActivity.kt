@@ -27,8 +27,8 @@ class AnimSampleActivity : AppCompatActivity() {
         val animation = please(duration = 1500L) {
 
             animate(avatar) toBe {
-                bottomOfHisParent(marginDp = 36f)
-                leftOfHisParent(marginDp = 16f)
+                bottomOfItsParent(marginDp = 36f)
+                leftOfItsParent(marginDp = 16f)
                 visible()
                 width(40, keepRatio = true, toDp = true)
             }
@@ -46,14 +46,14 @@ class AnimSampleActivity : AppCompatActivity() {
             }
 
             animate(revert) toBe {
-                rightOfHisParent(marginDp = 4f)
-                bottomOfHisParent(marginDp = 12f)
+                rightOfItsParent(marginDp = 4f)
+                bottomOfItsParent(marginDp = 12f)
                 backgroundAlpha(0f)
             }
 
             animate(start) toBe {
                 aboveOf(revert, marginDp = 4f)
-                rightOfHisParent(marginDp = 4f)
+                rightOfItsParent(marginDp = 4f)
                 backgroundAlpha(0f)
             }
 

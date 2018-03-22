@@ -118,7 +118,7 @@ class Expectations(private val pleaseAnim: PleaseAnim) {
         }
     }
 
-    fun topOfHisParent(marginDp: Float? = null, margin: Float? = null): PositionAnimExpectation {
+    fun topOfItsParent(marginDp: Float? = null, margin: Float? = null): PositionAnimExpectation {
         return PositionAnimExpectationTopOfParent().apply {
             expectations.add(this)
             this.marginDp = marginDp
@@ -126,7 +126,7 @@ class Expectations(private val pleaseAnim: PleaseAnim) {
         }
     }
 
-    fun rightOfHisParent(marginDp: Float? = null, margin: Float? = null): PositionAnimExpectation {
+    fun rightOfItsParent(marginDp: Float? = null, margin: Float? = null): PositionAnimExpectation {
         return PositionAnimExpectationRightOfParent().apply {
             expectations.add(this)
             this.marginDp = marginDp
@@ -134,7 +134,7 @@ class Expectations(private val pleaseAnim: PleaseAnim) {
         }
     }
 
-    fun bottomOfHisParent(marginDp: Float? = null, margin: Float? = null): PositionAnimExpectation {
+    fun bottomOfItsParent(marginDp: Float? = null, margin: Float? = null): PositionAnimExpectation {
         return PositionAnimExpectationBottomOfParent().apply {
             expectations.add(this)
             this.marginDp = marginDp
@@ -142,7 +142,7 @@ class Expectations(private val pleaseAnim: PleaseAnim) {
         }
     }
 
-    fun leftOfHisParent(marginDp: Float? = null, margin: Float? = null): PositionAnimExpectation {
+    fun leftOfItsParent(marginDp: Float? = null, margin: Float? = null): PositionAnimExpectation {
         return PositionAnimExpectationLeftOfParent().apply {
             expectations.add(this)
             this.marginDp = marginDp
@@ -150,7 +150,7 @@ class Expectations(private val pleaseAnim: PleaseAnim) {
         }
     }
 
-    fun centerBetweenViewAndHisParent(otherView: View, horizontal: Boolean, vertical: Boolean, toBeOnRight: Boolean, toBeOnBottom: Boolean, marginDp: Float? = null, margin: Float? = null): PositionAnimExpectation {
+    fun centerBetweenViewAndItsParent(otherView: View, horizontal: Boolean, vertical: Boolean, toBeOnRight: Boolean, toBeOnBottom: Boolean, marginDp: Float? = null, margin: Float? = null): PositionAnimExpectation {
         return PositionAnimExpectationCenterBetweenViewAndParent(otherView, horizontal, vertical, toBeOnRight, toBeOnBottom).apply {
             expectations.add(this)
             this.marginDp = marginDp
