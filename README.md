@@ -32,7 +32,7 @@ please {
 
 In your module [![Download](https://api.bintray.com/packages/florent37/maven/KotlinPleaseAnimate/images/download.svg)](https://bintray.com/florent37/maven/KotlinPleaseAnimate/_latestVersion)
 ```groovy
-compile 'com.github.florent37:kotlinpleaseanimate:1.0.0'
+implementation 'com.github.florent37:kotlinpleaseanimate:1.0.2'
 ```
 
 This code describe the video above
@@ -188,6 +188,8 @@ please {
      sameAlphaAs(otherView)
      visible()
      invisible()
+
+     custom(object: CustomAnimExpectation(){ ... })
 
      originalScale()
 
