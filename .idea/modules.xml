@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/KotlinPleaseAnimate.iml" filepath="$PROJECT_DIR$/KotlinPleaseAnimate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KotlinPleaseAnimate.iml" filepath="$PROJECT_DIR$/KotlinPleaseAnimate.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kotlinpleaseanimate/kotlinpleaseanimate.iml" filepath="$PROJECT_DIR$/kotlinpleaseanimate/kotlinpleaseanimate.iml" />
       <module fileurl="file://$PROJECT_DIR$/kotlinpleaseanimate/kotlinpleaseanimate.iml" filepath="$PROJECT_DIR$/kotlinpleaseanimate/kotlinpleaseanimate.iml" />
     </modules>
   </component>

@@ -39,10 +39,13 @@ class AnimMainActivity : AppCompatActivity() {
         concat.setOnClickListener {
             openScreen(AnimConcatActivity::class.java)
         }
+
+        custom.setOnClickListener {
+            openScreen(AnimCustomActivity::class.java)
+        }
     }
 
     private fun openScreen(screenClass: Class<*>) {
         startActivity(Intent(this@AnimMainActivity, screenClass))
     }
-
 }
