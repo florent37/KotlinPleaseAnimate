@@ -319,4 +319,10 @@ class Expectations(private val pleaseAnim: PleaseAnim) {
             expectations.add(this)
         }
     }
+
+    fun custom(expectation: CustomAnimExpectation): CustomAnimExpectation {
+        return expectation.apply {
+            expectations.add(this)
+        }
+    }
 }

@@ -1,9 +1,13 @@
 package com.github.florent37.kotlin.pleaseanimate.sample
 
+import android.animation.Animator
+import android.animation.ObjectAnimator
 import android.graphics.Color
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.Gravity
+import android.view.View
+import com.github.florent37.kotlin.pleaseanimate.core.custom.CustomAnimExpectation
 import com.github.florent37.kotlin.pleaseanimate.please
 import kotlinx.android.synthetic.main.activity_sample.*
 
@@ -21,6 +25,13 @@ class AnimSampleActivity : AppCompatActivity() {
             animate(content) {
                 outOfScreen(Gravity.BOTTOM)
                 invisible()
+                /*
+                custom(object: CustomAnimExpectation() {
+                    override fun getAnimator(viewToMove: View): Animator? {
+                        return ObjectAnimator.ofFloat(viewToMove, "myMethod", 0f, 1f)
+                    }
+                })
+                */
             }
         }.now()
 

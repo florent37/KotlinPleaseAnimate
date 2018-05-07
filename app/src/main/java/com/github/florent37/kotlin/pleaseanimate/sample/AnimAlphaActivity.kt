@@ -20,6 +20,7 @@ class AnimAlphaActivity : AppCompatActivity() {
             please {
                 animate(image1) toBe {
                     visible()
+
                 }
             }.start()
         }
