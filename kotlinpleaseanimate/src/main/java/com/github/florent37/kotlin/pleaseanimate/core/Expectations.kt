@@ -19,7 +19,7 @@ import com.github.florent37.kotlin.pleaseanimate.core.scale.*
 
 class Expectations(private val pleaseAnim: PleaseAnim) {
 
-    internal val expectations = mutableListOf<AnimExpectation>()
+    val expectations = mutableListOf<AnimExpectation>()
 
     internal val startActions: MutableList<() -> Unit> = mutableListOf()
     internal val endActions: MutableList<() -> Unit> = mutableListOf()

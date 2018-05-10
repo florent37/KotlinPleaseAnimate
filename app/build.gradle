@@ -24,14 +24,15 @@ android {
 }
 
 dependencies {
-    implementation 'com.android.support:appcompat-v7:' + project.supportVersion
-    implementation 'com.android.support:cardview-v7:' + project.supportVersion
+    implementation libs.AppCompat
+    implementation libs.CardView
 
-    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation libs.CircleImage
 
     implementation project(':kotlinpleaseanimate')
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation libs.Kotlin
 }
+
 repositories {
     mavenCentral()
 }

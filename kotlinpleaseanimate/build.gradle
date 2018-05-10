@@ -13,8 +13,8 @@ android {
 }
 
 dependencies {
-    implementation 'com.android.support:appcompat-v7:' + project.supportVersion
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation libs.AppCompat
+    implementation libs.Kotlin
 }
 
 ext {

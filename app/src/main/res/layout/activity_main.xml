@@ -65,4 +65,12 @@
         android:textColor="@android:color/white"
         app:backgroundTint="@color/colorPrimary"
         android:text="Chain" />
+
+    <Button
+        android:id="@+id/custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@color/colorPrimary"
+        android:text="Custom" />
 </LinearLayout>
