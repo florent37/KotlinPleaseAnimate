@@ -200,7 +200,18 @@ please {
      sameWidthAs(otherView)
      sameHeightAs(otherView)
 
+     marginTop(margin)
+     marginBottom(margin)
+     marginRight(margin)
+     marginLeft(margin)
+
+     paddingTop(padding)
+     paddingBottom(padding)
+     paddingRight(padding)
+     paddingLeft(padding)
+
      textColor(textColor)
+     textSize(textSize)
      backgroundAlpha(alpha)
 
      rotated(rotation)
