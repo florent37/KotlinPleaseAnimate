@@ -31,6 +31,7 @@ class PleaseAnimAlphaManager(
         calculate()
 
         alpha?.let { alpha ->
+
             val objectAnimator = ObjectAnimator.ofFloat(viewToMove, View.ALPHA, alpha)
 
             if (alpha == 0f) {
