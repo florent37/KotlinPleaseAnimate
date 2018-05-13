@@ -13,7 +13,7 @@ buildscript {
         cicleImageVersion   = "2.1.0"
         kotlinVersion       = "1.2.41"
 
-        libraryVersion = "1.0.3"
+        libraryVersion = "1.0.4"
 
         libs = [
                 AppCompat   : "com.android.support:appcompat-v7:$supportVersion",
