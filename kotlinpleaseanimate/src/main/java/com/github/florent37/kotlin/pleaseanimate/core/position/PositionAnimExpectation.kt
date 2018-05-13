@@ -1,17 +1,10 @@
 package com.github.florent37.kotlin.pleaseanimate.core.position
 
-import android.content.Context
-import android.util.TypedValue
 import android.view.View
 import com.github.florent37.kotlin.pleaseanimate.core.AnimExpectation
+import com.github.florent37.kotlin.pleaseanimate.core.Utils
 
 abstract class PositionAnimExpectation : AnimExpectation() {
-
-    companion object {
-        fun dpToPx(context: Context, dp: Float): Float {
-            return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, context.resources.displayMetrics)
-        }
-    }
 
     var isForPositionY: Boolean = false
         protected set
@@ -31,7 +24,7 @@ abstract class PositionAnimExpectation : AnimExpectation() {
     fun getMargin(view: View): Float {
         return when {
             this.margin != null -> this.margin!!
-            this.marginDp != null -> dpToPx(view.context, marginDp!!)
+            this.marginDp != null -> Utils.dpToPx(view.context, marginDp!!)
             else -> 0f
         }
     }

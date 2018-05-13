@@ -43,6 +43,14 @@ class AnimMainActivity : AppCompatActivity() {
         custom.setOnClickListener {
             openScreen(AnimCustomActivity::class.java)
         }
+
+        margin.setOnClickListener {
+            openScreen(AnimMarginActivity::class.java)
+        }
+
+        padding.setOnClickListener {
+            openScreen(AnimPaddingActivity::class.java)
+        }
     }
 
     private fun openScreen(screenClass: Class<*>) {

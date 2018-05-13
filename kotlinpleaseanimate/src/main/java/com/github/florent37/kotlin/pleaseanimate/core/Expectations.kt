@@ -9,7 +9,12 @@ import com.github.florent37.kotlin.pleaseanimate.core.alpha.AlphaAnimExpectation
 import com.github.florent37.kotlin.pleaseanimate.core.alpha.AlphaAnimExpectationValue
 import com.github.florent37.kotlin.pleaseanimate.core.custom.CustomAnimExpectation
 import com.github.florent37.kotlin.pleaseanimate.core.custom.TextColorAnimExpectation
+import com.github.florent37.kotlin.pleaseanimate.core.custom.TextSizeAnimExpectation
 import com.github.florent37.kotlin.pleaseanimate.core.custom.ViewBackgroundAlphaAnimExpectation
+import com.github.florent37.kotlin.pleaseanimate.core.margins.Margin
+import com.github.florent37.kotlin.pleaseanimate.core.margins.MarginSetAnimExpectation
+import com.github.florent37.kotlin.pleaseanimate.core.paddings.Padding
+import com.github.florent37.kotlin.pleaseanimate.core.paddings.PaddingSetAnimExpectation
 import com.github.florent37.kotlin.pleaseanimate.core.position.*
 import com.github.florent37.kotlin.pleaseanimate.core.rotation.RotationExpectation
 import com.github.florent37.kotlin.pleaseanimate.core.rotation.RotationExpectationOriginal
@@ -272,6 +277,12 @@ class Expectations(private val pleaseAnim: PleaseAnim) {
         }
     }
 
+    fun textSize(endSize: Float): CustomAnimExpectation {
+        return TextSizeAnimExpectation(endSize).apply {
+            expectations.add(this)
+        }
+    }
+
     fun backgroundAlpha(alpha: Float): CustomAnimExpectation {
         return ViewBackgroundAlphaAnimExpectation(alpha).apply {
             expectations.add(this)
@@ -322,6 +333,54 @@ class Expectations(private val pleaseAnim: PleaseAnim) {
 
     fun custom(expectation: CustomAnimExpectation): CustomAnimExpectation {
         return expectation.apply {
+            expectations.add(this)
+        }
+    }
+
+    fun marginTop(marginValue: Float): CustomAnimExpectation {
+        return MarginSetAnimExpectation(marginValue, Margin.TOP).apply {
+            expectations.add(this)
+        }
+    }
+
+    fun marginBottom(marginValue: Float): CustomAnimExpectation {
+        return MarginSetAnimExpectation(marginValue, Margin.BOTTOM).apply {
+            expectations.add(this)
+        }
+    }
+
+    fun marginRight(marginValue: Float): CustomAnimExpectation {
+        return MarginSetAnimExpectation(marginValue, Margin.RIGHT).apply {
+            expectations.add(this)
+        }
+    }
+
+    fun marginLeft(marginValue: Float): CustomAnimExpectation {
+        return MarginSetAnimExpectation(marginValue, Margin.LEFT).apply {
+            expectations.add(this)
+        }
+    }
+
+    fun paddingTop(paddingValue: Float): CustomAnimExpectation {
+        return PaddingSetAnimExpectation(paddingValue, Padding.TOP).apply {
+            expectations.add(this)
+        }
+    }
+
+    fun paddingBottom(paddingValue: Float): CustomAnimExpectation {
+        return PaddingSetAnimExpectation(paddingValue, Padding.BOTTOM).apply {
+            expectations.add(this)
+        }
+    }
+
+    fun paddingLeft(paddingValue: Float): CustomAnimExpectation {
+        return PaddingSetAnimExpectation(paddingValue, Padding.LEFT).apply {
+            expectations.add(this)
+        }
+    }
+
+    fun paddingRight(paddingValue: Float): CustomAnimExpectation {
+        return PaddingSetAnimExpectation(paddingValue, Padding.RIGHT).apply {
             expectations.add(this)
         }
     }

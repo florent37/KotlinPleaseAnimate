@@ -26,7 +26,7 @@ class AnimCustomActivity : AppCompatActivity() {
             if(!big) {
                 please {
                     animate(text_resize) toBe {
-                        textSize(startSize, endSize)
+                        textSize2(startSize, endSize)
                     }
                 }.start()
 
@@ -34,7 +34,7 @@ class AnimCustomActivity : AppCompatActivity() {
             } else {
                 please {
                     animate(text_resize) toBe {
-                        textSize(endSize, startSize)
+                        textSize2(endSize, startSize)
                     }
                 }.start()
 
@@ -43,8 +43,8 @@ class AnimCustomActivity : AppCompatActivity() {
         }
     }
 
-    private class TextSizeAnimExpectation(private val startSize: Float,
-                                          private val endSize: Float): CustomAnimExpectation() {
+    private class TextSizeAnimExpectation2(private val startSize: Float,
+                                           private val endSize: Float): CustomAnimExpectation() {
 
         override fun getAnimator(viewToMove: View): Animator? {
             return if(viewToMove is TextView) {
@@ -59,8 +59,8 @@ class AnimCustomActivity : AppCompatActivity() {
         }
     }
 
-    private fun Expectations.textSize(startSize: Float, endSize: Float): CustomAnimExpectation {
-        return TextSizeAnimExpectation(startSize, endSize).apply {
+    private fun Expectations.textSize2(startSize: Float, endSize: Float): CustomAnimExpectation {
+        return TextSizeAnimExpectation2(startSize, endSize).apply {
             expectations.add(this)
         }
     }
