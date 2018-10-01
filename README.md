@@ -226,6 +226,8 @@ Author: Florent Champigny [http://www.florentchampigny.com/](http://www.florentc
 
 Blog : [http://www.tutos-android-france.com/](http://www.tutos-android-france.com/)
 
+Fiches Plateau Moto : [https://www.fiches-plateau-moto.fr/](https://www.fiches-plateau-moto.fr/)
+
 Forked from ExpectAnim: https://github.com/florent37/ExpectAnim
 
 <a href="https://goo.gl/WXW8Dc">
