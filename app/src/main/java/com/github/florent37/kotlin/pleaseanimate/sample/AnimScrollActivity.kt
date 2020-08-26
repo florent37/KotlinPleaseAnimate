@@ -1,9 +1,9 @@
 package com.github.florent37.kotlin.pleaseanimate.sample
 
 import android.os.Bundle
-import android.support.v4.widget.NestedScrollView
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.view.Gravity
+import androidx.core.widget.NestedScrollView
 import com.github.florent37.kotlin.pleaseanimate.please
 import kotlinx.android.synthetic.main.activity_scroll.*
 
@@ -42,7 +42,7 @@ class AnimScrollActivity : AppCompatActivity() {
             }
         }
 
-        scrollview.setOnScrollChangeListener(NestedScrollView.OnScrollChangeListener { v, scrollX, scrollY, oldScrollX, oldScrollY ->
+        scrollview.setOnScrollChangeListener(NestedScrollView.OnScrollChangeListener { v, _, scrollY, _, _ ->
             val percent = scrollY * 1f / v.maxScrollAmount
             animation.setPercent(percent)
         })

@@ -13,7 +13,8 @@ android {
 }
 
 dependencies {
-    implementation libs.AppCompat
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.annotation:annotation:1.2.0-alpha01'
     implementation libs.Kotlin
 }
 

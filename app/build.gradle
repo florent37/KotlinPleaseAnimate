@@ -24,8 +24,10 @@ android {
 }
 
 dependencies {
-    implementation libs.AppCompat
-    implementation libs.CardView
+    implementation project(':kotlinpleaseanimate')
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.core:core:1.3.1'
 
     implementation libs.CircleImage
 
