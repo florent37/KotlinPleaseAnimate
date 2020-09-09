@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context="com.github.florent37.kotlin.pleaseanimate.sample.AnimScrollActivity">
 
-
     <View
         android:id="@+id/background"
         android:layout_width="match_parent"
@@ -44,7 +43,7 @@
             android:textSize="16sp"
             android:textStyle="bold" />
 
-        <android.support.v7.widget.AppCompatButton
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/revert"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -3,7 +3,7 @@ package com.github.florent37.kotlin.pleaseanimate.sample
 import android.animation.Animator
 import android.animation.ValueAnimator
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.view.View
 import android.widget.TextView
 import com.github.florent37.kotlin.pleaseanimate.core.Expectations
